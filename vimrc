@@ -180,7 +180,7 @@ filetype plugin indent on           " Turn on filetype-specific indenting modes 
 let python_highlight_all=1          " Extra highlights
 " Colors
 set t_Co=256                        " Force use 256 colors even if terminal doesn't
-colorscheme solarized               " Use the solarized color scheme
+silent! colorscheme solarized       " Use the solarized color scheme
 set background=dark                 " Use the dark background scheme
 hi Search ctermfg=237 ctermbg=178   " Colors for search
 set noerrorbells                    " No annoying sound on errors
@@ -582,7 +582,7 @@ let g:unite_abbr_highlight = 'Keyword'
 nnoremap <C-p> :Unite file_rec/async<cr>|                       " File search
 nnoremap <leader>s :Unite grep:.<cr>|                           " Content search
 let g:unite_source_history_yank_enable = 1
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
+silent! all unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <silent><leader>f :<C-u>Unite -buffer-name=files   file<cr>
 nnoremap <silent><leader>r :<C-u>Unite -buffer-name=files   file_rec/async:!<cr>
 nnoremap <silent><leader>m :<C-u>Unite -buffer-name=mru     -start-insert file_mru<cr>
