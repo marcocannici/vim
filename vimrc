@@ -78,7 +78,7 @@ Plugin 'sirver/UltiSnips'
 Plugin 'Shougo/unite.vim'                                        " Search and display information from sources like files, buffers, ..
 Plugin 'h1mesuke/unite-outline'                                  " Used by unite to display outline
 Plugin 'Shougo/vimproc.vim'                                      " Used by unite to speed up search
-Plugin 'fvisin/vim-colors-solarized', {'name': 'solarized'}      " Solarized theme for vim (not existing anymore)
+Plugin 'flazz/vim-colorschemes'                                  " Solarized theme for vim-colorschemes
 Plugin 'nathanaelkane/vim-indent-guides'                         " Adds indentation guides
 Plugin 'plasticboy/vim-markdown'                                 " Syntax highlighting for markdown
 Plugin 'terryma/vim-multiple-cursors'                            " Easily edit multiple locations in parallel
@@ -180,7 +180,7 @@ filetype plugin indent on           " Turn on filetype-specific indenting modes 
 let python_highlight_all=1          " Extra highlights
 " Colors
 set t_Co=256                        " Force use 256 colors even if terminal doesn't
-colo solarized                      " Use the solarized color scheme
+colorscheme solarized               " Use the solarized color scheme
 set background=dark                 " Use the dark background scheme
 hi Search ctermfg=237 ctermbg=178   " Colors for search
 set noerrorbells                    " No annoying sound on errors
