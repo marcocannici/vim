@@ -2,7 +2,7 @@
 
 * Clone into ~/.vim: 
   ```
-  git clone https://github.com/fvisin/vim.git ~/.vim
+  git clone https://github.com/marcocannici/vim.git ~/.vim
   ```
 * Install vundle: 
   ```
