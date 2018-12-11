@@ -582,7 +582,7 @@ let g:unite_abbr_highlight = 'Keyword'
 nnoremap <C-p> :Unite file_rec/async<cr>|                       " File search
 nnoremap <leader>s :Unite grep:.<cr>|                           " Content search
 let g:unite_source_history_yank_enable = 1
-silent! all unite#filters#matcher_default#use(['matcher_fuzzy'])
+silent! call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <silent><leader>f :<C-u>Unite -buffer-name=files   file<cr>
 nnoremap <silent><leader>r :<C-u>Unite -buffer-name=files   file_rec/async:!<cr>
 nnoremap <silent><leader>m :<C-u>Unite -buffer-name=mru     -start-insert file_mru<cr>
